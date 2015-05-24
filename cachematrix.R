@@ -1,13 +1,12 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Coursera - R Programming.
+## Programming Assignment 2
+## Student: Christian Willig.
 
-## Write a short comment describing this function
-
-# makeCacheMatrix creates a list containing a function to
-# 1. set the value of the matrix
-# 2. get the value of the matrix
-# 3. set the value of inverse of the matrix
-# 4. get the value of inverse of the matrix
+# The following funtion creates a list containing a function to
+# 1. set the value of a matrix
+# 2. get the value of a matrix
+# 3. set the value of inverse of a matrix
+# 4. get the value of inverse of a matrix
 
 makeCacheMatrix <- function(x = matrix()) {
   # This function follows the same format described in the assignment.
@@ -41,7 +40,6 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
 #The following function performs the calculation of an inverse matrix created with 
 #the above function, makeCacheMatrix().
 
