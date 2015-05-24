@@ -34,21 +34,22 @@ makeCacheMatrix <- function(x = matrix()) {
       invMatrix
   }
   
-  # Encapsulating all functions into a list, so they can be returned.
+  # Encapsulating all functions into a list.
   list(getMatrix = getMatrix, setMatrix = setMatrix, getInvMatrix = getInvMatrix, setInvMatrix = setInvMatrix)
 
 }
 
 
 #The following function performs the calculation of an inverse matrix created with 
-#the above function, makeCacheMatrix().
+#the above function, makeCacheMatrix(). If the the inverse has been calculated 
+#previously then it's returned and no further calculations are performed.
 
 cacheSolve <- function(x, ...) {
   
   ## Return a matrix that is the inverse of 'x'
   # This function follows the same format described in the assignment.
   
-  # Getting cached value for inverse Matrix.
+  # Getting cached value for inverse Matrix in case it has been calculated.
   inverseMatx <- x$getInvMatrix()
   
   # Validating returned value for inverse Matrix.
